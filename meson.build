@@ -68,3 +68,5 @@ pkg = import('pkgconfig')
 pkg.generate(name: 'zlib',
              description: 'zlib compression library',
              libraries: zlib)
+
+meson.override_dependency('zlib', zlib_dep)
