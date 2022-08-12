@@ -65,8 +65,8 @@ install_headers(headers)
 
 pkg = import('pkgconfig')
 
-pkg.generate(name: 'zlib',
-             description: 'zlib compression library',
-             libraries: zlib)
+pkg.generate(zlib,
+             name: 'zlib',
+             description: 'zlib compression library')
 
 meson.override_dependency('zlib', zlib_dep)
